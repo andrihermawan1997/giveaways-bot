@@ -36,7 +36,7 @@ exports.run = async (client, message, args) => {
     }
 
     // Start the giveaway
-    client.giveawaysManager.start(giveawayChannel, {
+    client.giveawaysManager.start = {
         // The giveaway duration
         time: ms(giveawayDuration),
         // The giveaway prize
